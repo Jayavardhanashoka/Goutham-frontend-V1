@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgetsnconsoles | The Premier Gaming Hub</title>
+    <meta name="description"
+        content="Welcome to Gadgetsnconsoles, the premier online hub for all things gaming. PS3, PS4, Xbox, Nintendo Switch games and accessories in Bangalore.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">Gadgets<span class="emerald">n</span>consoles</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#warranty">Warranty</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Game On • Bangalore
+            </div>
+            <h1 class="hero-title">
+                Level Up Your<br>
+                <span class="gradient-text">Game Today!</span>
+            </h1>
+            <p class="hero-description">
+                Welcome to Gadgetsnconsoles, the premier online hub for all things gaming.
+                Explore thousands of titles, from blockbuster AAA releases to hidden indie gems.
+            </p>
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary">
+                    <i data-lucide="gamepad-2"></i>
+                    Explore Products
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i data-lucide="phone"></i>
+                    Contact Us
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Game Titles</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Platforms</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1 Year</span>
+                    <span class="stat-label">Warranty</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="controller-showcase">
+                <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80"
+                    alt="Gaming Controller" class="controller-img">
+                <div class="controller-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Product Showcase -->
+    <section class="product-showcase" id="products">
+        <div class="section-header">
+            <span class="section-tag">Our Collection</span>
+            <h2 class="section-title">Gaming <span class="emerald">Consoles</span></h2>
+            <p class="section-subtitle">Get instant access to PC games, PlayStation & Xbox titles, and Nintendo Switch
+                games</p>
+        </div>
+
+        <div class="showcase-container">
+            <!-- Left Menu -->
+            <div class="showcase-menu">
+                <nav>
+                    <ul class="menu-list">
+                        <li class="menu-item active" data-index="0" data-clip="clip-grid">
+                            <span class="menu-num">01</span>
+                            <h3 class="menu-name">PlayStation<br>Consoles</h3>
+                        </li>
+                        <li class="menu-item" data-index="1" data-clip="clip-hexagons">
+                            <span class="menu-num">02</span>
+                            <h3 class="menu-name">Xbox<br>Series</h3>
+                        </li>
+                        <li class="menu-item" data-index="2" data-clip="clip-pixels">
+                            <span class="menu-num">03</span>
+                            <h3 class="menu-name">Gaming<br>Controllers</h3>
+                        </li>
+                        <li class="menu-item" data-index="3" data-clip="clip-wave">
+                            <span class="menu-num">04</span>
+                            <h3 class="menu-name">Game<br>Discs</h3>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Right Visual -->
+            <div class="showcase-visual">
+                <div class="visual-glow"></div>
+                <svg viewBox="0 0 500 500" class="showcase-svg" id="showcaseSvg">
+                    <defs>
+                        <!-- Grid Clip Path -->
+                        <clipPath id="clip-grid">
+                            <rect class="path" x="20" y="20" width="140" height="140" rx="8" />
+                            <rect class="path" x="180" y="20" width="140" height="140" rx="8" />
+                            <rect class="path" x="340" y="20" width="140" height="140" rx="8" />
+                            <rect class="path" x="20" y="180" width="140" height="140" rx="8" />
+                            <rect class="path" x="180" y="180" width="140" height="140" rx="8" />
+                            <rect class="path" x="340" y="180" width="140" height="140" rx="8" />
+                            <rect class="path" x="20" y="340" width="140" height="140" rx="8" />
+                            <rect class="path" x="180" y="340" width="140" height="140" rx="8" />
+                            <rect class="path" x="340" y="340" width="140" height="140" rx="8" />
+                        </clipPath>
+
+                        <!-- Hexagons Clip Path -->
+                        <clipPath id="clip-hexagons">
+                            <rect class="path" x="20" y="20" width="200" height="280" rx="16" />
+                            <rect class="path" x="20" y="320" width="200" height="160" rx="16" />
+                            <rect class="path" x="240" y="20" width="240" height="140" rx="16" />
+                            <rect class="path" x="240" y="180" width="110" height="160" rx="16" />
+                            <rect class="path" x="370" y="180" width="110" height="160" rx="16" />
+                            <rect class="path" x="240" y="360" width="240" height="120" rx="16" />
+                        </clipPath>
+
+                        <!-- Pixels Clip Path -->
+                        <clipPath id="clip-pixels">
+                            <rect class="path" x="20" y="20" width="100" height="100" rx="4" />
+                            <rect class="path" x="140" y="20" width="100" height="100" rx="4" />
+                            <rect class="path" x="260" y="20" width="100" height="100" rx="4" />
+                            <rect class="path" x="380" y="20" width="100" height="100" rx="4" />
+                            <rect class="path" x="20" y="140" width="100" height="100" rx="4" />
+                            <rect class="path" x="140" y="140" width="220" height="220" rx="4" />
+                            <rect class="path" x="380" y="140" width="100" height="100" rx="4" />
+                            <rect class="path" x="20" y="260" width="100" height="100" rx="4" />
+                            <rect class="path" x="380" y="260" width="100" height="100" rx="4" />
+                            <rect class="path" x="20" y="380" width="100" height="100" rx="4" />
+                            <rect class="path" x="140" y="380" width="100" height="100" rx="4" />
+                            <rect class="path" x="260" y="380" width="100" height="100" rx="4" />
+                            <rect class="path" x="380" y="380" width="100" height="100" rx="4" />
+                        </clipPath>
+
+                        <!-- Wave Clip Path -->
+                        <clipPath id="clip-wave">
+                            <path class="path"
+                                d="M480.6,235H19.4c-6,0-10.8-4.9-10.8-10.8v-9.5c0-6,4.9-10.8,10.8-10.8h461.1c6,0,10.8,4.9,10.8,10.8v9.5C491.4,230.2,486.6,235,480.6,235z" />
+                            <path class="path"
+                                d="M483.1,362.4H16.9c-4.6,0-8.3-3.7-8.3-8.3v-1.8c0-4.6,3.7-8.3,8.3-8.3h466.1c4.6,0,8.3,3.7,8.3,8.3v1.8C491.4,358.7,487.7,362.4,483.1,362.4z" />
+                            <path class="path"
+                                d="M460.3,336.3H39.7c-17.2,0-31.1-13.9-31.1-31.1v-31.5c0-17.2,13.9-31.1,31.1-31.1h420.7c17.2,0,31.1,13.9,31.1,31.1v31.5C491.4,322.4,477.5,336.3,460.3,336.3z" />
+                            <path class="path"
+                                d="M459.2,196.2H40.8v-35c0-47.5,38.5-86,86-86h246.5c47.5,0,86,38.5,86,86V196.2z" />
+                            <path class="path"
+                                d="M441.9,424.9H58.1c-9.6,0-17.3-7.8-17.3-17.3v-37.4h418.5v37.4C459.2,417.1,451.5,424.9,441.9,424.9z" />
+                        </clipPath>
+                    </defs>
+
+                    <g id="mainGroup" clip-path="url(#clip-grid)">
+                        <image id="showcaseImage"
+                            href="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80" width="500"
+                            height="500" preserveAspectRatio="xMidYMid slice" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid">
+        <div class="products-container">
+            <div class="product-card" data-product="ps4">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=400&q=80"
+                        alt="PlayStation 4">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">Console</span>
+                    <h3 class="card-title">PlayStation 4</h3>
+                    <p class="card-desc">Experience immersive gaming with stunning graphics</p>
+                    <div class="card-footer">
+                        <span class="card-warranty"><i data-lucide="shield-check"></i> 1 Year Warranty</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="ps3">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=400&q=80"
+                        alt="PlayStation 3">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">Console</span>
+                    <h3 class="card-title">PlayStation 3</h3>
+                    <p class="card-desc">Classic gaming experience with legendary titles</p>
+                    <div class="card-footer">
+                        <span class="card-warranty"><i data-lucide="shield-check"></i> 1 Year Warranty</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="xbox">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1621259182181-1d8ec8484c7c?w=400&q=80" alt="Xbox">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">Console</span>
+                    <h3 class="card-title">Xbox Series</h3>
+                    <p class="card-desc">Power your dreams with next-gen performance</p>
+                    <div class="card-footer">
+                        <span class="card-warranty"><i data-lucide="shield-check"></i> 1 Year Warranty</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="controller">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=400&q=80"
+                        alt="Controllers">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">Accessory</span>
+                    <h3 class="card-title">Controllers</h3>
+                    <p class="card-desc">Precision control for competitive gaming</p>
+                    <div class="card-footer">
+                        <span class="card-warranty"><i data-lucide="shield-check"></i> 6 Month Warranty</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warranty Section -->
+    <section class="warranty" id="warranty">
+        <div class="section-header">
+            <span class="section-tag">Protection Plans</span>
+            <h2 class="section-title">Warranty <span class="emerald">Coverage</span></h2>
+            <p class="section-subtitle">Choose the protection that fits your gaming lifestyle</p>
+        </div>
+
+        <div class="warranty-grid">
+            <div class="warranty-card gold">
+                <div class="warranty-shield">
+                    <i data-lucide="shield"></i>
+                    <span class="warranty-badge">GOLD</span>
+                </div>
+                <h3 class="warranty-title">1 Year</h3>
+                <p class="warranty-subtitle">Premium Protection</p>
+                <ul class="warranty-features">
+                    <li><i data-lucide="check"></i> Free Repairs</li>
+                    <li><i data-lucide="check"></i> Priority Support</li>
+                    <li><i data-lucide="check"></i> Parts Replacement</li>
+                    <li><i data-lucide="check"></i> Extended Coverage</li>
+                </ul>
+                <div class="warranty-cta">
+                    <span class="warranty-label">Best Value</span>
+                </div>
+            </div>
+
+            <div class="warranty-card silver">
+                <div class="warranty-shield">
+                    <i data-lucide="shield"></i>
+                    <span class="warranty-badge">SILVER</span>
+                </div>
+                <h3 class="warranty-title">6 Months</h3>
+                <p class="warranty-subtitle">Full Support</p>
+                <ul class="warranty-features">
+                    <li><i data-lucide="check"></i> Full Support</li>
+                    <li><i data-lucide="check"></i> Standard Repairs</li>
+                    <li><i data-lucide="check"></i> Phone Support</li>
+                </ul>
+            </div>
+
+            <div class="warranty-card bronze">
+                <div class="warranty-shield">
+                    <i data-lucide="shield"></i>
+                    <span class="warranty-badge">BRONZE</span>
+                </div>
+                <h3 class="warranty-title">3 Months</h3>
+                <p class="warranty-subtitle">Basic Coverage</p>
+                <ul class="warranty-features">
+                    <li><i data-lucide="check"></i> Standard Warranty</li>
+                    <li><i data-lucide="check"></i> Email Support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="section-header">
+            <span class="section-tag">Meet The Crew</span>
+            <h2 class="section-title">Our <span class="emerald">Team</span></h2>
+            <p class="section-subtitle">The passionate gamers behind Gadgetsnconsoles</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-inner">
+                        <span class="avatar-letter">G</span>
+                    </div>
+                </div>
+                <h3 class="team-name">GOUTHAM</h3>
+                <p class="team-role">Co-Founder</p>
+                <div class="team-contact">
+                    <a href="tel:9632872582" class="team-phone">
+                        <i data-lucide="phone"></i>
+                        9632872582
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-inner">
+                        <span class="avatar-letter">G</span>
+                    </div>
+                </div>
+                <h3 class="team-name">GNANESH</h3>
+                <p class="team-role">Co-Founder</p>
+                <div class="team-contact">
+                    <a href="tel:9731150402" class="team-phone">
+                        <i data-lucide="phone"></i>
+                        9731150402
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-inner">
+                        <span class="avatar-letter">K</span>
+                    </div>
+                </div>
+                <h3 class="team-name">KAMAL</h3>
+                <p class="team-role">Co-Founder</p>
+                <div class="team-contact">
+                    <a href="tel:8050135749" class="team-phone">
+                        <i data-lucide="phone"></i>
+                        80501 35749
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="emerald">Us</span></h2>
+                <p class="contact-description">
+                    Ready to level up your gaming experience? Reach out to us for the best deals on consoles, games, and
+                    accessories.
+                </p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>Pride Vatika Layout, koppa gate,<br>Bangalore 560083</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>9632872582 / 9731150402<br>80501 35749</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>gadgetsnconsoles@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                    <a href="https://wa.me/919632872582" class="social-link whatsapp"><i
+                            data-lucide="message-circle"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="What are you looking for?"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i data-lucide="send"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <span class="logo-icon">🎮</span>
+                    <span class="logo-text">Gadgets<span class="emerald">n</span>consoles</span>
+                </a>
+                <p class="footer-tagline">The premier online hub for all things gaming. Level up your game today!</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#warranty">Warranty</a></li>
+                        <li><a href="#team">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Platforms</h4>
+                    <ul>
+                        <li><a href="#products">PlayStation</a></li>
+                        <li><a href="#products">Xbox</a></li>
+                        <li><a href="#products">Nintendo Switch</a></li>
+                        <li><a href="#products">PC Games</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#warranty">Warranty Info</a></li>
+                        <li><a href="tel:9632872582">Call Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Gadgetsnconsoles. All rights reserved. Made with 💚 in Bangalore</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
